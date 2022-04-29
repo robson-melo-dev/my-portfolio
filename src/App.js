@@ -1,35 +1,25 @@
+import foto from "./images/foto-perfil.jpg";
 import "./App.css";
-import foto from "./images/foto-perfil.jpg"
+import React from "react";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import Home from './pages/Home';
+import About from './pages/About';
+import Skills from './pages/Skills';
+import Projects from './pages/Projects';
+import Contact from './pages/Contact';
 
 function App() {
-  return <div className="main-container">
-
-{/* ######################################       NAVBAR   #################################### */}
-    <nav className="navbar">
-      <span className="select-language"><a href="#">Idioma:</a></span>
-      <span className="language"><a href="#">English</a></span>
-      <span className="language"><a href="#">Portuguese</a></span>
-      <span className="page-link"><a href="#">Sobre mim</a></span>
-      <span><a href="#">Skills</a></span>
-      <span><a href="#">Projetos</a></span>
-      <span><a href="#">Contato</a></span>
-    </nav>
-
-    <main>
-      {/* ######################################       Apresentação  #################################### */}
-      <div className="title">
-      <h1>Olá, sou o <span className="nome">Robson</span>,</h1>
-      <h2>e sou um Desenvolvedor Front End</h2>
-      </div>
-      <img src={foto} alt="foto de perfil" className="profile-pic"/>
-
-      {/* ######################################       Botão próxima página  #################################### */}
-          
-    </main>
-    <div className="next-page">
-        <span className="next-page-btn"><a href="#" >Sobre mim &#10148;</a></span>
-      </div>
-  </div>;
+  return (
+    <Router>
+        <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/skills" element={<Skills />} />
+        <Route path="/projects" element={<Contact />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </Router>
+  );
 }
 
 export default App;

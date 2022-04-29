@@ -1,0 +1,123 @@
+@import url(https://fonts.googleapis.com/css2?family=Lato&family=Roboto+Mono:wght@300;400&family=Ubuntu+Mono&display=swap);
+
+
+:root{
+  --fnt-titles: 'Lato', sans-serif;
+  --fnt-text: 'Roboto Mono', monospace;
+  --fnt-links: 'Ubuntu Mono', monospace;
+  --clr-highlights: #26F7B2;
+  --clr-almostwhite: #D3EDEA;
+  --clr-darkblue: #09333F;
+  --clr-lighblue: #009D9A;
+  margin: 0;
+  padding: 0;
+
+}
+
+/* #################################   MAIN DESIGN   ##################### */
+.main-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  background-image: url("../images/background-dark.png"); 
+}
+
+.navbar{
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  margin: 20px 100px 20px 0;  
+}
+
+.navbar span{
+  padding: 20px;
+}
+
+.page-link{
+  display: block;
+  float:right;
+}
+
+.navbar .language{
+  display: none;
+}
+
+.select-language{
+  float:left;
+}
+
+main{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap:100px;
+}
+
+.title{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.next-page{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin: 40px 0 40px 40px;
+}
+.next-page-btn{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  width:200px;
+  height: 40px;
+  border: solid 1px var(--clr-highlights);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.profile-pic{
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  border-radius: 50%;
+}
+
+/* #################################   TYPOGRAPHY  ##################### */
+a, a:visited, a:hover, a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navbar span{
+  font-family: var(--fnt-links);
+  font-size: 18px;
+  color: var(--clr-highlights);
+}
+
+.title{
+  color: var(--clr-almostwhite);
+  font-family: var(--fnt-titles);
+  font-size: 24px;
+}
+
+ .title h1{
+  font-family: var(--fnt-titles);
+  font-size: 64px;
+ }
+
+.title .nome{
+  color: var(--clr-highlights);
+}
+
+.next-page{
+  font-family: var(--fnt-titles);
+  color: var(--clr-highlights);
+}
+
+
+
+
+
