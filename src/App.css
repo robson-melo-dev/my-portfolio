@@ -24,67 +24,11 @@
   background-image: url("./images/background-dark.png"); 
 }
 
-.navbar{
-  display: flex;
-  flex-direction: row;
-  justify-content: right;
-  margin: 20px 100px 20px 0;  
-}
-
-.navbar span{
-  padding: 20px;
-}
-
-.page-link{
-  display: block;
-  float:right;
-}
-
-.navbar .language{
-  display: none;
-}
-
-.select-language{
-  float:left;
-}
-.navbar span{
-  font-family: var(--fnt-links);
-  font-size: 18px;
-  color: var(--clr-highlights);
-}
-
-.next-page{
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  margin: 40px 0 40px 40px;
-}
-.next-page-btn{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  width:200px;
-  height: 40px;
-  border: solid 1px var(--clr-highlights);
-  border-radius: 10px;
-  text-align: center;
-}
-
-
-/* #################################   TYPOGRAPHY  ##################### */
-a, a:visited, a:hover, a:active {
-  text-decoration: none;
-  color: inherit;
-}
 
 
 
 
-.next-page{
-  font-family: var(--fnt-titles);
-  color: var(--clr-highlights);
-}
+
 
 
 

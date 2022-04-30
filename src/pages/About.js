@@ -25,12 +25,13 @@ function About() {
         <img src={progpic} alt="" className="programming-pic"/>
         </div>
         </article>
+        </main>
+        
         <div className="next-page">
         <span className="next-page-btn">
           <a href="skills">Skills &#10148;</a>
         </span>
       </div>
-        </main>
         
         
       
