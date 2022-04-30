@@ -1,37 +1,10 @@
-import foto from "../images/foto-perfil.jpg"; 
-import './Home.css'
+import foto from "../images/foto-perfil.jpg";
+import "./Home.css";
 
-
-function App() {
+function Home() {
   return (
-
-    <div className="main-container">
-      {/* ######################################       NAVBAR   #################################### */}
-      <nav className="navbar">
-        <span className="select-language">
-          <a href="#">Idioma:</a>
-        </span>
-        <span className="language">
-          <a href="#">English</a>
-        </span>
-        <span className="language">
-          <a href="#">Portuguese</a>
-        </span>
-        <span className="page-link">
-          <a href="#">Sobre mim</a>
-        </span>
-        <span>
-          <a href="#">Skills</a>
-        </span>
-        <span>
-          <a href="#">Projetos</a>
-        </span>
-        <span>
-          <a href="#">Contato</a>
-        </span>
-      </nav>
-
-      <main>
+    <>
+      <main className="main-home">
         {/* ######################################       PRESENTATION  #################################### */}
         <div className="title">
           <h1>
@@ -48,9 +21,8 @@ function App() {
           <a href="about">Sobre mim &#10148;</a>
         </span>
       </div>
-    </div>
-
+    </>
   );
 }
 
-export default App;
+export default Home;

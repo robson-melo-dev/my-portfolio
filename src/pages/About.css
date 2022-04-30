@@ -1,0 +1,74 @@
+@import url(https://fonts.googleapis.com/css2?family=Lato&family=Roboto+Mono:wght@300;400&family=Ubuntu+Mono&display=swap);
+
+:root {
+  --fnt-titles: "Lato", sans-serif;
+  --fnt-text: "Roboto Mono", monospace;
+  --fnt-links: "Ubuntu Mono", monospace;
+  --clr-highlights: #26f7b2;
+  --clr-almostwhite: #d3edea;
+  --clr-darkblue: #09333f;
+  --clr-lighblue: #009d9a;
+  margin: 0;
+  padding: 0;
+}
+/* #################################   MAIN DESIGN   ##################### */
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.about-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 100%;
+}
+
+.title-about {
+  margin-left: 20px;
+  color: var(--clr-highlights);
+  font-family: var(--fnt-titles);
+  font-size: 30px;
+  float: left;
+}
+
+.about-copy p {
+  margin-left: 20px;
+  margin-right: 20px;
+  font-family: var(--fnt-text);
+  color: var(--clr-almostwhite);
+  font-size: 14px;
+  text-align: justify;
+}
+
+.img-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.programming-pic {
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+}
+
+.next-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin: 40px 0 40px 40px;
+}
+.next-page-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  width: 200px;
+  height: 40px;
+  border: solid 1px var(--clr-highlights);
+  border-radius: 10px;
+  text-align: center;
+}

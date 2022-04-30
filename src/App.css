@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css2?family=Lato&family=Roboto+Mono:wght@300;400&family=Ubuntu+Mono&display=swap);
 
 
+
 :root{
   --fnt-titles: 'Lato', sans-serif;
   --fnt-text: 'Roboto Mono', monospace;
@@ -46,18 +47,10 @@
 .select-language{
   float:left;
 }
-
-main{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap:100px;
-}
-
-.title{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.navbar span{
+  font-family: var(--fnt-links);
+  font-size: 18px;
+  color: var(--clr-highlights);
 }
 
 .next-page{
@@ -78,12 +71,6 @@ main{
   text-align: center;
 }
 
-.profile-pic{
-  width: 100%;
-  max-width: 350px;
-  height: auto;
-  border-radius: 50%;
-}
 
 /* #################################   TYPOGRAPHY  ##################### */
 a, a:visited, a:hover, a:active {
@@ -91,26 +78,8 @@ a, a:visited, a:hover, a:active {
   color: inherit;
 }
 
-.navbar span{
-  font-family: var(--fnt-links);
-  font-size: 18px;
-  color: var(--clr-highlights);
-}
 
-.title{
-  color: var(--clr-almostwhite);
-  font-family: var(--fnt-titles);
-  font-size: 24px;
-}
 
- .title h1{
-  font-family: var(--fnt-titles);
-  font-size: 64px;
- }
-
-.title .nome{
-  color: var(--clr-highlights);
-}
 
 .next-page{
   font-family: var(--fnt-titles);

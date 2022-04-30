@@ -15,29 +15,29 @@
 }
 
 /* #################################   MAIN DESIGN   ##################### */
+
 .main-container{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100vh;
   background-image: url("../images/background-dark.png"); 
+  min-height: 100vh;
+}
+.container{
+
 }
 
 .navbar{
   display: flex;
   flex-direction: row;
   justify-content: right;
-  margin: 20px 100px 20px 0;  
+  margin: 20px 100px 0px 0;  
 }
 
 .navbar span{
   padding: 20px;
 }
 
-.page-link{
-  display: block;
-  float:right;
-}
 
 .navbar .language{
   display: none;
@@ -46,8 +46,13 @@
 .select-language{
   float:left;
 }
+.navbar span{
+  font-family: var(--fnt-links);
+  font-size: 18px;
+  color: var(--clr-highlights);
+}
 
-main{
+.main-home{
   display: flex;
   flex-direction: row;
   justify-content: center;

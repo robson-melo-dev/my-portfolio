@@ -1,35 +1,14 @@
-
+import "./About.css";
+import progpic from "../images/programming.png"; 
 
 function About() {
   return (
-    <div className="main-container">
-      {/* ######################################       NAVBAR   #################################### */}
-      <nav className="navbar">
-        <span className="select-language">
-          <a href="#">Idioma:</a>
-        </span>
-        <span className="language">
-          <a href="#">English</a>
-        </span>
-        <span className="language">
-          <a href="#">Portuguese</a>
-        </span>
-        <span className="page-link">
-          <a href="#">Sobre mim</a>
-        </span>
-        <span>
-          <a href="#">Skills</a>
-        </span>
-        <span>
-          <a href="#">Projetos</a>
-        </span>
-        <span>
-          <a href="#">Contato</a>
-        </span>
-      </nav>
+    <>
+     
 
       <main>
-        <h1>Sobre Mim</h1>
+       <article className="about-copy">
+        <h1 className="title-about">Sobre Mim</h1>       
         <p>
           Sou um Desenvolvedor Front-End autodidata, baseado no Brasil, buscando
           oportunidades de crescimento. Trazendo uma atitude motivada e uma
@@ -42,8 +21,21 @@ function About() {
           por Front End e trabalhando duro para melhorar e aprender mais a cada
           dia que passa.
         </p>
-      </main>
-    </div>
+        <div className="img-container">
+        <img src={progpic} alt="" className="programming-pic"/>
+        </div>
+        </article>
+        <div className="next-page">
+        <span className="next-page-btn">
+          <a href="skills">Skills &#10148;</a>
+        </span>
+      </div>
+        </main>
+        
+        
+      
+      </>
+    
   );
 }
 
