@@ -13,20 +13,20 @@
 }
 /* #################################   MAIN DESIGN   ##################### */
 
-main {
+.about-container {
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    flex-direction: row;
+    justify-content: space-around;
     width: 100%;
+    gap: 2vw;
   }
 
 .about-copy {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 100%;
   padding-left: 10vw;
-  padding-right: 10vw;
+  width: 39vw;
 }
 
 .title-about {
@@ -47,11 +47,13 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
+  padding-right: 10vw;
 }
-.programming-pic {
-  width: 100%;
-  max-width: 45vw;
-  height: auto;
+.profile-pic {
+  width: 20vw;
+  height: 20vw;
+  border-radius: 50%;
 }
 
 .next-page-about{
@@ -74,7 +76,7 @@ main {
     text-align: center;
     font-size: 15px;
     font-family: var(--fnt-titles);
-    color: var(--clr-highlights);
+    color: vr(--clr-highlights);
   }
 
 

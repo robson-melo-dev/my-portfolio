@@ -1,11 +1,11 @@
 import "./About.css";
-import progpic from "../images/programming.png";
+import foto from "../images/foto-perfil.jpg";
 import { Link } from "react-router-dom";
 
 function About() {
   return (
     <>
-      <main>
+      <main className="about-container">
         <article className="about-copy">
           <h1 className="title-about">Sobre Mim</h1>
           <p>
@@ -20,10 +20,10 @@ function About() {
             desenvolvimento, apaixonado por Front End e trabalhando duro para
             melhorar e aprender mais a cada dia que passa.
           </p>
+          </article>
           <div className="img-container">
-            <img src={progpic} alt="" className="programming-pic" />
+            <img src={foto} alt="" className="profile-pic" />
           </div>
-        </article>
       </main>
 
       <div className="next-page">

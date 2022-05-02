@@ -32,7 +32,14 @@
 }
 
 .navbar span{
-  padding: 2vw;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+}
+.navbar span:hover{
+  background-color: var(--clr-lighblue);
+  border-radius: 10%;
 }
 
 
@@ -67,12 +74,7 @@
 
 
 
-.profile-pic{
-  width: 100%;
-  max-width: 30vw;
-  max-height: 30vw;
-  border-radius: 50%;
-}
+
 
 /* #################################   TYPOGRAPHY  ##################### */
 a, a:visited, a:hover, a:active {
@@ -86,10 +88,10 @@ a, a:visited, a:hover, a:active {
   color: var(--clr-highlights);
 }
 .title h1{
-  font-size: 60px;
+  font-size: 80px;
 }
 .title h2{
-  font-size: 26px;
+  font-size: 40px;
 }
 
 .next-page{

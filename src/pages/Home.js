@@ -9,11 +9,10 @@ function Home() {
         {/* ######################################       PRESENTATION  #################################### */}
         <div className="title">
           <h1>
-            Olá, sou o <span className="nome">Robson</span>,
+            Olá, eu sou o <span className="nome">Robson</span>
           </h1>
           <h2>e sou um Desenvolvedor Front End</h2>
         </div>
-        <img src={foto} alt="foto de perfil" className="profile-pic" />
 
         {/* ######################################       NEXT PAGE BUTTON  #################################### */}
       </main>
