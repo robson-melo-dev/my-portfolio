@@ -17,7 +17,7 @@
 .contact-title{
     font-family: var(--fnt-titles);
     color: var(--clr-highlights);
-    font-size: 40px;
+    font-size: 30px;
     padding-left: 10vw;
     padding-right: 10vw;
 }
@@ -28,6 +28,7 @@
     justify-content: space-around;
     padding-left: 10vw;
     padding-right: 10vw;
+    gap: 2vw;
     
 }
 
@@ -38,7 +39,7 @@
 }
 
 .contact-container .email{
-    color: var(--clr-highlights);
+    color: var(--clr-lighblue);
     font-family: var(--fnt-titles);
     font-size: 40px;
 }
@@ -46,10 +47,46 @@
 .contact-form{
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-around;
+    align-items: center;
     width: 30vw;
-    height: 20vw;
+    height: 25vw;
     background-color: var(--clr-almostwhite);
+    border-radius: 1vw;
+    color:var(--clr-almostwhite)
 }
 
+.social-icon{
+    padding: 1vw;
+}
+.social-icon:hover{
+    opacity: 50%;
+}
 
+.contact-form input{
+    width: 20vw;
+    box-sizing: border-box;
+  border: 2px solid var(--clr-darkblue);
+  border-radius: 4px;
+  background-color: var(--clr-darkblue);
+  resize: none;
+  color: var(--clr-almostwhite);
+  font-family: var(--fnt-text);
+}
+.input-message textarea{
+width: 20vw;
+  height: 100px;
+  box-sizing: border-box;
+  border: 2px solid var(--clr-darkblue);
+  border-radius: 4px;
+  background-color: var(--clr-darkblue);
+  resize: none;
+  color: var(--clr-almostwhite);
+}
+.contact-form input[type=submit]{
+    background-color: var(--clr-highlights);
+    color: var(--clr-darkblue);
+}
+.contact-form input[type=submit]:hover{
+    opacity: 50%;
+}

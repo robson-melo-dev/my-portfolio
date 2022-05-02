@@ -93,15 +93,18 @@ a, a:visited, a:hover, a:active {
 }
 
 .next-page{
+  position: fixed; 
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  margin-top: 1vw;
-  margin-bottom: 3vw;  
+  
  padding-left: 10vw;
  gap: 1vw;
+ bottom: 5px;
+ left: 5px;
 }
 .next-page-btn{
+ 
   display: flex;
   flex-direction: column;
   justify-content: center;
