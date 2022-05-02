@@ -1,0 +1,55 @@
+@import url(https://fonts.googleapis.com/css2?family=Lato&family=Roboto+Mono:wght@300;400&family=Ubuntu+Mono&display=swap);
+
+
+:root{
+  --fnt-titles: 'Lato', sans-serif;
+  --fnt-text: 'Roboto Mono', monospace;
+  --fnt-links: 'Ubuntu Mono', monospace;
+  --clr-highlights: #26F7B2;
+  --clr-almostwhite: #D3EDEA;
+  --clr-darkblue: #09333F;
+  --clr-lighblue: #009D9A;
+  margin: 0;
+  padding: 0;
+
+}
+
+.contact-title{
+    font-family: var(--fnt-titles);
+    color: var(--clr-highlights);
+    font-size: 40px;
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+.contact-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    
+}
+
+.contact-container p{
+    font-family: var(--fnt-text);
+    color: var(--clr-almostwhite);
+    font-size: 18px;
+}
+
+.contact-container .email{
+    color: var(--clr-highlights);
+    font-family: var(--fnt-titles);
+    font-size: 40px;
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 30vw;
+    height: 20vw;
+    background-color: var(--clr-almostwhite);
+}
+
+

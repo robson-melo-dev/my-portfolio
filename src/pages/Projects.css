@@ -1,0 +1,34 @@
+@import url(https://fonts.googleapis.com/css2?family=Lato&family=Roboto+Mono:wght@300;400&family=Ubuntu+Mono&display=swap);
+
+
+:root{
+  --fnt-titles: 'Lato', sans-serif;
+  --fnt-text: 'Roboto Mono', monospace;
+  --fnt-links: 'Ubuntu Mono', monospace;
+  --clr-highlights: #26F7B2;
+  --clr-almostwhite: #D3EDEA;
+  --clr-darkblue: #09333F;
+  --clr-lighblue: #009D9A;
+  margin: 0;
+  padding: 0;
+
+}
+
+.projects-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    font-family: var(--fnt-text);
+    color: var(--clr-almostwhite);
+    font-size: 18px;
+}
+
+
+
+.projects-container h1{
+    font-family: var(--fnt-titles);
+    color: var(--clr-highlights);
+    font-size: 40px;
+}

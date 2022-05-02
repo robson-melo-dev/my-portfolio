@@ -5,43 +5,18 @@ import About from './pages/About';
 import Skills from './pages/Skills';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
+import Navbar from './Navbar';
 
 function App() {
   return (
     <Router>
       <div className="main-container">
-         {/* ######################################       NAVBAR   #################################### */}
-      <nav className="navbar">
-        <span className="select-language">
-          <a href="#">Idioma:</a>
-        </span>
-        <span className="language">
-          <a href="#">English</a>
-        </span>
-        <span className="language">
-          <a href="#">Portuguese</a>
-        </span>
-        <span>
-          <a href="/">Home</a>
-        </span>
-        <span>
-          <a href="about">Sobre mim</a>
-        </span>
-        <span>
-          <a href="#">Skills</a>
-        </span>
-        <span>
-          <a href="#">Projetos</a>
-        </span>
-        <span>
-          <a href="#">Contato</a>
-        </span>
-      </nav>
-        <Routes>
+       <Navbar/>
+      <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/skills" element={<Skills />} />
-        <Route path="/projects" element={<Contact />} />
+        <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
       </div>

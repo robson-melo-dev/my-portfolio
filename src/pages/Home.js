@@ -3,7 +3,7 @@ import "./Home.css";
 
 function Home() {
   return (
-    <>
+    <div className="container">
       <main className="main-home">
         {/* ######################################       PRESENTATION  #################################### */}
         <div className="title">
@@ -18,10 +18,10 @@ function Home() {
       </main>
       <div className="next-page">
         <span className="next-page-btn">
-          <a href="about">Sobre mim &#10148;</a>
+          <a href="about">Sobre mim &#10095;</a>
         </span>
       </div>
-    </>
+    </div>
   );
 }
 

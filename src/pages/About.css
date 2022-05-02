@@ -25,10 +25,11 @@ main {
   flex-direction: column;
   justify-content: center;
   max-width: 100%;
+  padding-left: 10vw;
+  padding-right: 10vw;
 }
 
 .title-about {
-  margin-left: 2%;
   color: var(--clr-highlights);
   font-family: var(--fnt-titles);
   font-size: 30px;
@@ -36,8 +37,6 @@ main {
 }
 
 .about-copy p {
-  margin-left: 2%;
-  margin-right: 2%;
   font-family: var(--fnt-text);
   color: var(--clr-almostwhite);
   font-size: 15px;
@@ -51,7 +50,7 @@ main {
 }
 .programming-pic {
   width: 100%;
-  max-width: 55vw;
+  max-width: 45vw;
   height: auto;
 }
 
@@ -67,7 +66,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    margin-left: 5vw;
+    margin-left: 10vw;
     width: 150px;
     height: 40px;
     border: solid 2px var(--clr-highlights);
