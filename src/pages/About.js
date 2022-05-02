@@ -1,5 +1,6 @@
 import "./About.css";
 import progpic from "../images/programming.png";
+import { Link } from "react-router-dom";
 
 function About() {
   return (
@@ -27,10 +28,10 @@ function About() {
 
       <div className="next-page">
         <span className="next-page-btn">
-          <a href="/">&#10094; Home</a>
+        <Link to="/">&#10094; Home</Link>
         </span>
         <span className="next-page-btn">
-          <a href="skills">Skills &#10095;</a>
+        <Link to="/skills">Skills &#10095;</Link>
         </span>
       </div>
     </>

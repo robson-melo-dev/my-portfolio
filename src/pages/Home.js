@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import foto from "../images/foto-perfil.jpg";
 import "./Home.css";
 
@@ -18,7 +19,7 @@ function Home() {
       </main>
       <div className="next-page">
         <span className="next-page-btn">
-          <a href="about">Sobre mim &#10095;</a>
+          <Link to="about">Sobre mim &#10095;</Link>
         </span>
       </div>
     </div>

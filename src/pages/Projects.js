@@ -1,5 +1,6 @@
 import React from 'react'
 import './Projects.css'
+import { Link } from 'react-router-dom';
 
 const Projects = () => {
   return (
@@ -11,11 +12,11 @@ const Projects = () => {
 
     <div className="next-page">
     <span className="next-page-btn">
-      <a href="skills">	
-&#10094; Skills</a>
+    <Link to="/skills">	
+&#10094; Skills</Link>
     </span>
     <span className="next-page-btn">
-      <a href="contact">Contato &#10095;</a>
+    <Link to="/contact">Contato &#10095;</Link>
     </span>
   </div>
 

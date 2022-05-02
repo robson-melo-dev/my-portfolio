@@ -1,31 +1,33 @@
+import { Link } from "react-router-dom";
+
 function Navbar(){
 
     return(
         <>
         <nav className="navbar">
         <span className="select-language">
-          <a href="#">Idioma:</a>
+        <Link to="#">Idioma:</Link>
         </span>
         <span className="language">
-          <a href="#">English</a>
+        <Link to="#">English</Link>
         </span>
         <span className="language">
-          <a href="#">Portuguese</a>
+        <Link to="#">Portuguese</Link>
         </span>
         <span>
-          <a href="/">Home</a>
+        <Link to="/">Home</Link>
         </span>
         <span>
-          <a href="about">Sobre mim</a>
+        <Link to="/about">Sobre mim</Link>
         </span>
         <span>
-          <a href="skills">Skills</a>
+        <Link to="/skills">Skills</Link>
         </span>
         <span>
-          <a href="projects">Projetos</a>
+        <Link to="/projects">Projetos</Link>
         </span>
         <span>
-          <a href="contact">Contato</a>
+        <Link to="/contact">Contato</Link>
         </span>
       </nav>;
         </>

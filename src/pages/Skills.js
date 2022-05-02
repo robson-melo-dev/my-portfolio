@@ -1,6 +1,7 @@
 import React from "react";
 import progpic from "../images/programming2.png";
 import "./Skills.css";
+import { Link } from "react-router-dom";
 
 export const Skills = () => {
   return (
@@ -30,10 +31,10 @@ export const Skills = () => {
       </div>
       <div className="next-page">
         <span className="next-page-btn">
-          <a href="about">&#10094; Sobre mim</a>
+        <Link to="/about">&#10094; Sobre mim</Link>
         </span>
         <span className="next-page-btn">
-          <a href="projects">Projetos &#10095;</a>
+        <Link to="/projects">Projetos &#10095;</Link>
         </span>
       </div>
     </>

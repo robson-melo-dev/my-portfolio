@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Contact.css'
 import linkedin from "../images/linkedin.png";
 import facebook from "../images/facebook.png";
@@ -45,7 +46,7 @@ const Contact = () => {
        </div>
        <div className="next-page">
         <span className="next-page-btn">
-          <a href="projects">&#10094; Projetos</a>
+        <Link to="/projects">&#10094; Projetos</Link>
         </span>
         </div>
     </>
