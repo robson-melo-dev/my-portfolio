@@ -1,0 +1,30 @@
+:root{
+    --clr-almostwhite: #d3edea;
+}
+
+g{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-self: center;
+    justify-content: flex-end;
+}
+tspan{
+    padding: 10px 10px 10px 10px;
+    stroke-width:0.55px;
+    stroke: #5e2bff;
+    stroke-dashoffset: 1000;
+    stroke-dasharray: 1000;
+    animation: stroke-it 8s ease-in-out forwards 1s;
+}
+
+@keyframes stroke-it {
+    0%{
+        stroke-dashoffset: 1000;
+    }
+
+    100%{
+        stroke-dashoffset: 0;
+    }
+
+}

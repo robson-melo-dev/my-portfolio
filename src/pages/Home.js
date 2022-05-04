@@ -1,5 +1,9 @@
 import { Link } from "react-router-dom";
 import "./Home.css";
+import Title from "./Title";
+const almostwhite = '#d3edea';
+/* import {ReactComponent as Title} from "../images/titulo.svg" */
+
 
 function Home() {
   return (
@@ -8,10 +12,15 @@ function Home() {
         {/* ######################################       PRESENTATION  #################################### */}
         <div className="title">
           <h1>
-            Olá, eu sou o <span className="nome">Robson</span>
+            Olá, eu sou o
+            <span className="nome">
+              <Title color="transparent" size={300}/>
+            </span>
           </h1>
           <h2>e sou um Desenvolvedor Front End</h2>
         </div>
+
+       
 
         {/* ######################################       NEXT PAGE BUTTON  #################################### */}
       </main>
