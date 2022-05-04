@@ -1,5 +1,5 @@
 import React from "react";
-import progpic from "../images/programming2.png";
+import progpic from "../images/programming2.jpg";
 import "./Skills.css";
 import { Link } from "react-router-dom";
 
