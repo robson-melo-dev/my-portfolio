@@ -3,16 +3,15 @@
 
 
 :root{
-  --fnt-titles: 'Lato', sans-serif;
-  --fnt-text: 'Roboto Mono', monospace;
-  --fnt-links: 'Ubuntu Mono', monospace;
-  --clr-highlights: #26F7B2;
-  --clr-almostwhite: #D3EDEA;
-  --clr-darkblue: #09333F;
-  --clr-lighblue: #009D9A;
+  --fnt-titles: "Lato", sans-serif;
+  --fnt-text: "Roboto Mono", monospace;
+  --fnt-links: "Ubuntu Mono", monospace;
+  --clr-highlights: #26f7b2;
+  --clr-almostwhite: #d3edea;
+  --clr-darkblue: #09333f;
+  --clr-lighblue: #009d9a;
   margin: 0;
   padding: 0;
-
 }
 
 /* #################################   MAIN DESIGN   ##################### */
@@ -21,7 +20,7 @@
   flex-direction: column;
   justify-content: space-between;
   height: 100vh;
-  background-image: url("./images/background-dark.png"); 
+  background-image: url("./images/background-dark02.jpg"); 
 }
 
 

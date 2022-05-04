@@ -17,16 +17,20 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    flex-wrap: wrap;
     width: 100%;
-    gap: 2vw;
+    gap: 5vw;
+    align-self: center;
+    justify-self: center;
   }
 
 .about-copy {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 10vw;
-  width: 39vw;
+  width: 50%;
+  min-height: 70vh;
+  padding-left: 2vw;
 }
 
 .title-about {
@@ -51,17 +55,19 @@
   padding-right: 10vw;
 }
 .profile-pic {
-  width: 20vw;
-  height: 20vw;
+  width: 300px;
   border-radius: 50%;
 }
 
 .next-page-about{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
     margin-top: 1vw;
     margin-bottom: 3vw;
+    justify-self: flex-end;
+    min-height: 10vh;
   }
   .next-page-about-btn{
     display: flex;

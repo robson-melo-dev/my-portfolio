@@ -1,5 +1,5 @@
 import "./About.css";
-import foto from "../images/foto-perfil.jpg";
+import foto from "../images/foto-perfil02.jpg";
 import { Link } from "react-router-dom";
 
 function About() {

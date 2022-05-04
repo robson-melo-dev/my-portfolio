@@ -7,8 +7,9 @@
   --fnt-links: 'Ubuntu Mono', monospace;
   --clr-highlights: #26F7B2;
   --clr-almostwhite: #D3EDEA;
-  --clr-darkblue: #09333F;
-  --clr-lighblue: #009D9A;
+  --clr-highlightpurple: #5E2BFF;
+  --clr-darkpurple: #160F29;
+  --clr-neutralgray: #565857;
   margin: 0;
   padding: 0;
 
@@ -39,7 +40,7 @@
 }
 
 .contact-container .email{
-    color: var(--clr-lighblue);
+    color: var(--clr-highlightpurple);
     font-family: var(--fnt-titles);
     font-size: 40px;
 }
@@ -66,9 +67,9 @@
 .contact-form input{
     width: 20vw;
     box-sizing: border-box;
-  border: 2px solid var(--clr-darkblue);
+  border: 2px solid var(--clr-darkpurple);
   border-radius: 4px;
-  background-color: var(--clr-darkblue);
+  background-color: var(--clr-darkpurple);
   resize: none;
   color: var(--clr-almostwhite);
   font-family: var(--fnt-text);
@@ -77,15 +78,15 @@
 width: 20vw;
   height: 100px;
   box-sizing: border-box;
-  border: 2px solid var(--clr-darkblue);
+  border: 2px solid var(--clr-darkpurple);
   border-radius: 4px;
-  background-color: var(--clr-darkblue);
+  background-color: var(--clr-darkpurple);
   resize: none;
   color: var(--clr-almostwhite);
 }
 .contact-form input[type=submit]{
     background-color: var(--clr-highlights);
-    color: var(--clr-darkblue);
+    color: var(--clr-darkpurple);
 }
 .contact-form input[type=submit]:hover{
     opacity: 50%;

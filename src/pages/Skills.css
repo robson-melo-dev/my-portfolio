@@ -8,8 +8,9 @@
   --fnt-links: 'Ubuntu Mono', monospace;
   --clr-highlights: #26F7B2;
   --clr-almostwhite: #D3EDEA;
-  --clr-darkblue: #09333F;
-  --clr-lighblue: #009D9A;
+  --clr-highlightpurple: #5E2BFF;
+  --clr-darkpurple: #160F29;
+  --clr-neutralgray: #565857;
   margin: 0;
   padding: 0;
 

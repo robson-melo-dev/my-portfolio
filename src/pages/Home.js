@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import foto from "../images/foto-perfil.jpg";
 import "./Home.css";
 
 function Home() {

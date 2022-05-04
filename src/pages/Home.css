@@ -1,112 +1,88 @@
 @import url(https://fonts.googleapis.com/css2?family=Lato&family=Roboto+Mono:wght@300;400&family=Ubuntu+Mono&display=swap);
 
-
-:root{
-  --fnt-titles: 'Lato', sans-serif;
-  --fnt-text: 'Roboto Mono', monospace;
-  --fnt-links: 'Ubuntu Mono', monospace;
-  --clr-highlights: #26F7B2;
-  --clr-almostwhite: #D3EDEA;
-  --clr-darkblue: #09333F;
-  --clr-lighblue: #009D9A;
+:root {
+  --fnt-titles: "Lato", sans-serif;
+  --fnt-text: "Roboto Mono", monospace;
+  --fnt-links: "Ubuntu Mono", monospace;
+  --clr-highlights: #26f7b2;
+  --clr-almostwhite: #d3edea;
+  --clr-highlightpurple: #5e2bff;
+  --clr-darkpurple: #160f29;
+  --clr-neutralgray: #565857;
   margin: 0;
   padding: 0;
-
 }
 
 /* #################################   MAIN DESIGN   ##################### */
 
-.main-container{
+.main-container {
   display: flex;
   flex-direction: column;
   /* justify-content: space-between; */
-  background-image: url("../images/background-dark.png"); 
+  background-image: url("../images/background-dark02.jpg");
   min-height: 100vh;
+  overflow: none;
 }
 
-.navbar{
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex-wrap: wrap;
+}
+
+.main-home {
   display: flex;
   flex-direction: row;
-  justify-content: right;
-  margin: 2vw 10vw 0 0; 
-}
-
-.navbar span{
-  padding-left: 2vw;
-  padding-right: 2vw;
-  padding-top: 1vw;
-  padding-bottom: 1vw;
-}
-.navbar span:hover{
-  background-color: var(--clr-lighblue);
-  border-radius: 10%;
-}
-
-
-.navbar .language{
-  display: none;
-}
-
-.select-language{
-  float:left;
-}
-.navbar span{
-  font-family: var(--fnt-links);
-  font-size: 18px;
-  color: var(--clr-highlights);
-}
-
-.main-home{
-  display: flex;
-  flex-direction: row;
+  justify-self: center;
   justify-content: center;
-  gap:10vw;
+  align-items: center;
+  gap: 10vw;
+  min-height: 65vh;
 }
 
-.title{
+.title {
   display: flex;
   flex-direction: column;
   justify-content: center;
   color: var(--clr-almostwhite);
   font-family: var(--fnt-titles);
-
+  padding-left: 2vw;
+  padding-right: 2vw;
 }
 
-
-
-
-
 /* #################################   TYPOGRAPHY  ##################### */
-a, a:visited, a:hover, a:active {
+a,
+a:visited,
+a:hover,
+a:active {
   text-decoration: none;
   color: inherit;
 }
 
-
-
-.title .nome{
-  color: var(--clr-highlights);
+.title .nome {
+  color: var(--clr-highlightpurple);
 }
-.title h1{
+.title h1 {
   font-size: 80px;
 }
-.title h2{
+.title h2 {
   font-size: 40px;
 }
 
-.next-page{
-  position: fixed; 
+.next-page {
+  position: fixed;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  
- padding-left: 10vw;
- gap: 1vw;
- bottom: 5px;
- left: 5px;
+  justify-self: flex-end;
+  padding-left: 10vw;
+  gap: 1vw;
+  bottom: 5px;
+  left: 5px;
+  min-height: 10vh;
 }
-.next-page-btn{
- 
+.next-page-btn {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -121,4 +97,23 @@ a, a:visited, a:hover, a:active {
   color: var(--clr-highlights);
 }
 
+/* ###############################  MOBILE ################################ */
+@media (max-width: 600px) {
+  .title {
+    flex-wrap: wrap;
+  }
+  .title h1 {
+    font-size: 24px;
+  }
 
+  .title h2 {
+    font-size: 14px;
+  }
+
+}
+
+@media (max-width: 920px){
+  .next-page {
+    display: none;
+  }
+}

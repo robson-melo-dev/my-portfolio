@@ -1,34 +1,22 @@
 import { Link } from "react-router-dom";
+import './Navbar.css'
 
 function Navbar(){
 
     return(
         <>
         <nav className="navbar">
-        <span className="select-language">
-        <Link to="#">Idioma:</Link>
-        </span>
-        <span className="language">
-        <Link to="#">English</Link>
-        </span>
-        <span className="language">
-        <Link to="#">Portuguese</Link>
-        </span>
-        <span>
-        <Link to="/">Home</Link>
-        </span>
-        <span>
-        <Link to="/about">Sobre mim</Link>
-        </span>
-        <span>
-        <Link to="/skills">Skills</Link>
-        </span>
-        <span>
-        <Link to="/projects">Projetos</Link>
-        </span>
-        <span>
-        <Link to="/contact">Contato</Link>
-        </span>
+        
+        <Link to="#"><span className="select-language">Idioma:</span></Link>      
+        <Link to="#"><span className="language">English</span></Link>        
+        <Link to="#"><span className="language">Portuguese</span></Link>
+        
+        <Link to="/"><span className="page-navigation">Home</span></Link>
+        <Link to="/about"><span className="page-navigation">Sobre mim</span></Link>
+        <Link to="/skills"><span className="page-navigation">Skills</span></Link>
+        <Link to="/projects"><span className="page-navigation">Projetos</span></Link>
+        <Link to="/contact"><span className="page-navigation">Contato</span></Link>
+        
       </nav>;
         </>
     );
