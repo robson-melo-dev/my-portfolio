@@ -1,13 +1,14 @@
-@import url(https://fonts.googleapis.com/css2?family=Lato&family=Roboto+Mono:wght@300;400&family=Ubuntu+Mono&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Baloo+Chettan:regular|Lato:regular|Padauk:regular);
 
 :root {
-  --fnt-titles: "Lato", sans-serif;
-  --fnt-text: "Roboto Mono", monospace;
-  --fnt-links: "Ubuntu Mono", monospace;
+  --fnt-titles: "Baloo Chettan", sans-serif;
+  --fnt-text: "Padauk", monospace;
+  --fnt-links: "Lato", monospace;
   --clr-highlights: #26f7b2;
   --clr-almostwhite: #d3edea;
-  --clr-darkblue: #09333f;
-  --clr-lighblue: #009d9a;
+  --clr-highlightpurple: #5e2bff;
+  --clr-darkpurple: #160f29;
+  --clr-neutralgray: #565857;
   margin: 0;
   padding: 0;
 }
@@ -18,10 +19,13 @@
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
+    justify-self: center;
+    align-self: center;
     width: 100%;
     gap: 5vw;
     align-self: center;
     justify-self: center;
+    animation: slide-in-right 1s ease-in-out forwards;
   }
 
 .about-copy {
@@ -32,11 +36,21 @@
   min-height: 70vh;
   padding-left: 2vw;
 }
+@media (max-width:940px) {
+  .about-copy {
+    width: 90%;
+  }
+  
+  .next-page {
+    display: none;
+  }
+  
+}
 
 .title-about {
   color: var(--clr-highlights);
   font-family: var(--fnt-titles);
-  font-size: 30px;
+  font-size: 40px;
   float: left;
 }
 

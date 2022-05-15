@@ -14,7 +14,7 @@ function Home() {
           <h1>
             Olá, eu sou o
             <span className="nome">
-              <Title color="transparent" size={300}/>
+              <Title color="transparent" size={237.74}/>
             </span>
           </h1>
           <h2>e sou um Desenvolvedor Front End</h2>

@@ -1,24 +1,24 @@
-@import url(https://fonts.googleapis.com/css2?family=Lato&family=Roboto+Mono:wght@300;400&family=Ubuntu+Mono&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Baloo+Chettan:regular|Lato:regular|Padauk:regular);
 
 
 :root{
-  --fnt-titles: 'Lato', sans-serif;
-  --fnt-text: 'Roboto Mono', monospace;
-  --fnt-links: 'Ubuntu Mono', monospace;
-  --clr-highlights: #26F7B2;
-  --clr-almostwhite: #D3EDEA;
-  --clr-highlightpurple: #5E2BFF;
-  --clr-darkpurple: #160F29;
-  --clr-neutralgray: #565857;
-  margin: 0;
-  padding: 0;
+    --fnt-titles: "Baloo Chettan", sans-serif;
+    --fnt-text: "Padauk", monospace;
+    --fnt-links: "Lato", monospace;
+    --clr-highlights: #26f7b2;
+    --clr-almostwhite: #d3edea;
+    --clr-highlightpurple: #5e2bff;
+    --clr-darkpurple: #160f29;
+    --clr-neutralgray: #565857;
+    margin: 0;
+    padding: 0;
 
 }
 
 .contact-title{
     font-family: var(--fnt-titles);
     color: var(--clr-highlights);
-    font-size: 30px;
+    font-size: 40px;
     padding-left: 10vw;
     padding-right: 10vw;
 }
@@ -26,11 +26,12 @@
 .contact-container{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
     padding-left: 10vw;
     padding-right: 10vw;
     gap: 2vw;
-    
+    animation: slide-in-right 1s ease-in-out forwards;
 }
 
 .contact-container p{
@@ -43,6 +44,8 @@
     color: var(--clr-highlightpurple);
     font-family: var(--fnt-titles);
     font-size: 40px;
+    width: 100%;
+    max-width: 100vw;
 }
 
 .contact-form{
@@ -50,8 +53,9 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    width: 30vw;
-    height: 25vw;
+    width: 100%;
+    max-width: 200px;
+    height: 400px;
     background-color: var(--clr-almostwhite);
     border-radius: 1vw;
     color:var(--clr-almostwhite)
@@ -65,7 +69,8 @@
 }
 
 .contact-form input{
-    width: 20vw;
+    width: 100%;
+    max-width: 60vw;
     box-sizing: border-box;
   border: 2px solid var(--clr-darkpurple);
   border-radius: 4px;
@@ -75,8 +80,9 @@
   font-family: var(--fnt-text);
 }
 .input-message textarea{
-width: 20vw;
-  height: 100px;
+    width: 100%;
+  height: 200px;
+  max-width: 60vw;
   box-sizing: border-box;
   border: 2px solid var(--clr-darkpurple);
   border-radius: 4px;
@@ -90,4 +96,16 @@ width: 20vw;
 }
 .contact-form input[type=submit]:hover{
     opacity: 50%;
+}
+@media (max-width: 600px){
+    .contact-title{
+        font-size: 20px;
+    }
+    .contact-container p{
+        font-size: 12px;
+    }
+    .contact-container .email{
+        font-size: 15px;
+    }
+
 }

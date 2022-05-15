@@ -20,8 +20,6 @@ const Contact = () => {
            </p>
            <a href='https://www.linkedin.com/in/robsonthedev/'><img src={linkedin} alt="" className='social-icon'/></a>
            <a href='https://github.com/robson-melo-dev'><img src={github} alt=""className='social-icon'/></a>
-           <a href='https://www.instagram.com/robson.raven/'><img src={instagram} alt=""className='social-icon'/></a>
-           <a href='https://www.facebook.com/robsonpantro'><img src={facebook} alt=""className='social-icon'/></a>
            <a href='https://api.whatsapp.com/send?phone=5555981182976&text=Ol%C3%A1!%20Vim%20pelo%20Portf%C3%B3lio.'><img src={whatsapp} alt=""className='social-icon'/></a>
            
        </article>
@@ -39,7 +37,7 @@ const Contact = () => {
            <textarea placeholder='Mensagem'/>
            </label>
            <label>
-           <input type="submit" value="Enviar"/>
+           <input type="submit" value="Ops, A implementar"/>
            </label>
            
        </form>

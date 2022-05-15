@@ -1,9 +1,11 @@
-@import url(https://fonts.googleapis.com/css2?family=Lato&family=Roboto+Mono:wght@300;400&family=Ubuntu+Mono&display=swap);
+/* @import url(https://fonts.googleapis.com/css2?family=Lato&family=Roboto+Mono:wght@300;400&family=Ubuntu+Mono&display=swap); */
+@import url(https://fonts.googleapis.com/css?family=Baloo+Chettan:regular|Lato:regular|Padauk:regular);
+
 
 :root {
-  --fnt-titles: "Lato", sans-serif;
-  --fnt-text: "Roboto Mono", monospace;
-  --fnt-links: "Ubuntu Mono", monospace;
+  --fnt-titles: "Baloo Chettan", sans-serif;
+  --fnt-text: "Padauk", monospace;
+  --fnt-links: "Lato", monospace;
   --clr-highlights: #26f7b2;
   --clr-almostwhite: #d3edea;
   --clr-highlightpurple: #5e2bff;
@@ -47,7 +49,7 @@
   justify-content: center;
   align-items: center;
   color: var(--clr-almostwhite);
-  font-family: var(--fnt-titles);
+  font-family: var(--fnt-links);
   padding-left: 2vw;
   padding-right: 2vw;
 }
@@ -62,25 +64,24 @@ a:active {
 }
 
 .nome {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-padding: 10px;
+  display: inline-block;
+  padding: 10px;
 }
 
 .nome svg{
   overflow: visible;
+  
 }
 .title h1 {
   font-size: 80px;
-  animation: slide-in 1s ease-in-out forwards;
+  animation: slide-in-right 1s ease-in-out forwards;
 }
 .title h2 {
+  font-family: var(--fnt-links);
   font-size: 40px;
-  animation: slide-in 2s cubic-bezier(0.21, 0.26, 1,-0.71) forwards;
+  animation: slide-in-right 1s ease-in-out forwards;
 }
-@keyframes slide-in{
+@keyframes slide-in-right{
   0%{
     transform: translate(-500px,0);
     opacity: 0;
@@ -92,6 +93,8 @@ padding: 10px;
     
   }
 }
+
+
 
 
 .next-page {
@@ -121,6 +124,10 @@ padding: 10px;
   color: var(--clr-highlights);
 }
 
+.next-page-btn :hover{
+  transform: scale(1.3); 
+}
+
 /* ###############################  MOBILE ################################ */
 @media (max-width: 600px) {
   .title {
@@ -136,7 +143,7 @@ padding: 10px;
 
 }
 
-@media (max-width: 920px){
+@media (max-width: 800px){
   .next-page {
     display: none;
   }

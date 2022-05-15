@@ -1,14 +1,14 @@
 :root{
-    --fnt-titles: 'Lato', sans-serif;
-    --fnt-text: 'Roboto Mono', monospace;
-    --fnt-links: 'Ubuntu Mono', monospace;
-    --clr-highlights: #26F7B2;
-    --clr-almostwhite: #D3EDEA;
-    --clr-highlightpurple: #5E2BFF;
-    --clr-darkpurple: #160F29;
-    --clr-neutralgray: #565857;
-    margin: 0;
-    padding: 0;
+  --fnt-titles: "Baloo Chettan", sans-serif;
+  --fnt-text: "Padauk", monospace;
+  --fnt-links: "Lato", monospace;
+  --clr-highlights: #26f7b2;
+  --clr-almostwhite: #d3edea;
+  --clr-highlightpurple: #5e2bff;
+  --clr-darkpurple: #160f29;
+  --clr-neutralgray: #565857;
+  margin: 0;
+  padding: 0;
   
   }
 
@@ -29,7 +29,7 @@
     padding-right: 2vw;
     padding-top: 1vw;
     padding-bottom: 1vw;
-    font-family: var(--fnt-links);
+    font-family: var(--fnt-titles);
     font-size: 18px;
     font-weight: 500;
     color: var(--clr-highlights);
@@ -50,7 +50,7 @@
     padding-right: 2vw;
     padding-top: 1vw;
     padding-bottom: 1vw;
-    font-family: var(--fnt-links);
+    font-family: var(--fnt-titles);
     color: var(--clr-almostwhite);
     font-size: 18px;
     font-weight: 500;

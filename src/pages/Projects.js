@@ -1,13 +1,20 @@
 import React from 'react'
 import './Projects.css'
 import { Link } from 'react-router-dom';
+import trigan from '../images/trigan.jpg'
 
 const Projects = () => {
   return (
       <>
     <div className='projects-container'>
             <h1>Projetos que trabalhei</h1>
-            <p>Bom, parece que este é meu melhor trabalho até agora. Então volte em alguns dias que esta seção estar recheada de projetos concluídos.</p>
+            <section className='project-card' >
+            <a href='https://trigan.org/' target="_blank" rel='noreferrer'><img src={trigan} alt="" className='card-image'/></a>
+            <section className='content'>
+            <p>Atuo no Front End desta start up Escocesa, usando tecnologias como React, Next.js, Consumo de API com Axios, dentre outras.</p>
+            <p>Clique na imagem para acessar o site.</p>
+            </section>
+            </section>
     </div>
 
     <div className="next-page">
